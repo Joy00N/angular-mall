@@ -23,7 +23,6 @@ export class ProductService {
     private handleError(err: HttpErrorResponse) {
         let errorMessage = '';
         if (err.error instanceof ErrorEvent) {
-          // A client-side or network error occurred. Handle it accordingly.
           errorMessage = `An error occurred: ${err.error.message}`;
         } else {
           // The backend returned an unsuccessful response code.
