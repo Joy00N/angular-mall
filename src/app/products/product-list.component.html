@@ -32,7 +32,7 @@
           </thead>
           <tbody>
               <!-- image -->
-            <tr *ngFor='let product of productList'>
+            <tr *ngFor='let product of filteredList'>
                 <td >
                     <img *ngIf='showImage'
                         [src]='product.imageUrl'
@@ -54,7 +54,10 @@
                 {{product.price | currency}}
               </td>
               <td>
-                {{product.starRating}}
+                <pm-star 
+                    [rating]='product.starRating'
+                    (ratingClicked)='onRatingClicked($event)'>
+                </pm-star>
               </td>
             </tr>
           </tbody>
