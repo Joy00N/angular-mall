@@ -8,13 +8,15 @@ import { ProductDetailsComponent } from './products/product-details.component';
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 import { FormsModule } from '@angular/forms';
+import { ProductCategoryComponent } from './product-categories/product-category.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     ProductComponent,
     StarComponent,
-    ProductDetailsComponent
+    ProductDetailsComponent,
+    ProductCategoryComponent
   ],
   imports: [
     BrowserModule,
